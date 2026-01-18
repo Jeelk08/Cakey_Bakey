@@ -1,6 +1,5 @@
 import { ArrowLeft, ShoppingCart } from "lucide-react";
 import { menuCategories } from "../data/menuData";
-import { useState } from "react";
 
 interface CategoryPageProps {
   category: string;
@@ -8,7 +7,6 @@ interface CategoryPageProps {
 }
 
 export default function CategoryPage({ category, onBack }: CategoryPageProps) {
-  const [selectedItem, setSelectedItem] = useState<string | null>(null);
 
   const categoryData = menuCategories.find(cat => cat.id === category);
   if (!categoryData) return <div className="min-h-screen flex items-center justify-center">Category not found</div>;

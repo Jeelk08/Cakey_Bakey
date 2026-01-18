@@ -1,3 +1,12 @@
+export interface MenuCategory {
+  id: string;
+  name: string;
+  description: string;
+  items: MenuItem[];
+  image?: string; // 👈 ADD THIS (optional so nothing breaks)
+}
+
+
 export interface MenuItem {
   name: string;
   price500gm?: string;
@@ -291,4 +300,36 @@ export const menuCategories: MenuCategory[] = [
       },
     ],
   },
+  {
+  id: 'cookies',
+  name: 'Cookies',
+  description: 'Freshly baked crunchy cookies (Minimum order applies)',
+  items: [
+    {
+      name: 'Choco Chip Cookies',
+      pricePerPiece: '₹30',
+      description: 'Classic cookies loaded with chocolate chips',
+      ingredients: 'Flour, butter, sugar, chocolate chips',
+    },
+    {
+      name: 'Butter Cookies',
+      pricePerPiece: '₹25',
+      description: 'Melt-in-mouth buttery cookies',
+      ingredients: 'Flour, butter, sugar',
+    },
+    {
+      name: 'Oatmeal Cookies',
+      pricePerPiece: '₹35',
+      description: 'Healthy oatmeal cookies with a soft crunch',
+      ingredients: 'Oats, flour, butter, brown sugar',
+    },
+    {
+      name: 'Double Chocolate Cookies',
+      pricePerPiece: '₹40',
+      description: 'Chocolate cookies with gooey chocolate chunks',
+      ingredients: 'Cocoa, dark chocolate, butter',
+    },
+  ],
+},
+
 ];

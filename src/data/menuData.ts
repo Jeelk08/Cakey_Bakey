@@ -40,28 +40,29 @@ export interface MenuCategory {
 // DATA
 // =====================
 export const menuCategories: MenuCategory[] = [
+  // 🎂 REGULAR CAKES (WITH IMAGES)
   {
     id: "regular-cakes",
     name: "Regular Cakes",
     description: "100% eggless cakes in classic flavors - Available in 500gm & 1kg",
     items: [
-      { name: "Black Forest", price500gm: "₹350", price1kg: "₹650", description: "Classic chocolate sponge layered with whipped cream and cherry", ingredients: "Chocolate sponge, whipped cream, cherries", image: blackForestImg },
-      { name: "Blueberry", price500gm: "₹400", price1kg: "₹750", description: "Vanilla cake with blueberry compote", ingredients: "Vanilla sponge, blueberry compote", image: blueberryImg },
-      { name: "Butterscotch", price500gm: "₹400", price1kg: "₹750", description: "Rich butterscotch with crunchy praline", ingredients: "Vanilla sponge, butterscotch sauce", image: butterscotchImg },
-      { name: "Cassata", price500gm: "₹450", price1kg: "₹850", description: "Tri-flavor ice cream style cake", ingredients: "Layered sponge, fruits", image: cassataImg },
-      { name: "Cookie & Cream", price500gm: "₹400", price1kg: "₹750", description: "Vanilla cake with crushed cookies", ingredients: "Vanilla sponge, Oreo cookies", image: cookieCreamImg },
-      { name: "KitKat Crunch", price500gm: "₹450", price1kg: "₹850", description: "Chocolate cake with KitKat crunch", ingredients: "Chocolate sponge, KitKat", image: kitkatImg },
-      { name: "Mango", price500gm: "₹400", price1kg: "₹750", description: "Fresh mango flavored cake", ingredients: "Vanilla sponge, mango pulp", image: mangoImg },
-      { name: "Pineapple", price500gm: "₹400", price1kg: "₹750", description: "Classic pineapple cream cake", ingredients: "Vanilla sponge, pineapple", image: pineappleImg },
-      { name: "Pistachio", price500gm: "₹450", price1kg: "₹850", description: "Premium pista cake", ingredients: "Pistachio paste, sponge", image: pistaImg },
-      { name: "Red Velvet", price500gm: "₹450", price1kg: "₹850", description: "Classic red velvet cream cake", ingredients: "Red velvet sponge", image: redVelvetImg },
-      { name: "Strawberry", price500gm: "₹400", price1kg: "₹750", description: "Fresh strawberry cream cake", ingredients: "Strawberry crush", image: strawberryImg },
-      { name: "Truffle", price500gm: "₹450", price1kg: "₹850", description: "Rich chocolate truffle cake", ingredients: "Chocolate ganache", image: truffleImg },
-      { name: "White Forest", price500gm: "₹400", price1kg: "₹750", description: "White chocolate version of black forest", ingredients: "White chocolate, cream", image: whiteForestImg },
+      { name: "Black Forest", price500gm: "₹350", price1kg: "₹650", description: "Classic chocolate sponge layered with whipped cream and cherry", image: blackForestImg },
+      { name: "Blueberry", price500gm: "₹400", price1kg: "₹750", description: "Vanilla cake with blueberry compote", image: blueberryImg },
+      { name: "Butterscotch", price500gm: "₹400", price1kg: "₹750", description: "Butterscotch with crunchy praline", image: butterscotchImg },
+      { name: "Cassata", price500gm: "₹450", price1kg: "₹850", description: "Tri-flavor layered cake", image: cassataImg },
+      { name: "Cookie & Cream", price500gm: "₹400", price1kg: "₹750", description: "Vanilla cake with crushed cookies", image: cookieCreamImg },
+      { name: "KitKat Crunch", price500gm: "₹450", price1kg: "₹850", description: "Chocolate cake with KitKat crunch", image: kitkatImg },
+      { name: "Mango", price500gm: "₹400", price1kg: "₹750", description: "Fresh mango cake", image: mangoImg },
+      { name: "Pineapple", price500gm: "₹400", price1kg: "₹750", description: "Classic pineapple cake", image: pineappleImg },
+      { name: "Pistachio", price500gm: "₹450", price1kg: "₹850", description: "Premium pista cake", image: pistaImg },
+      { name: "Red Velvet", price500gm: "₹450", price1kg: "₹850", description: "Classic red velvet cake", image: redVelvetImg },
+      { name: "Strawberry", price500gm: "₹400", price1kg: "₹750", description: "Fresh strawberry cake", image: strawberryImg },
+      { name: "Truffle", price500gm: "₹450", price1kg: "₹850", description: "Rich chocolate truffle", image: truffleImg },
+      { name: "White Forest", price500gm: "₹400", price1kg: "₹750", description: "White chocolate forest cake", image: whiteForestImg },
     ],
   },
 
-  // 🔽 ALL OTHER CATEGORIES UNTOUCHED
+  // 👑 ROYAL CAKES
   {
     id: "royal-cakes",
     name: "Royal Flavour Cakes",
@@ -73,15 +74,52 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
 
+  // 🫙 JAR / TUB CAKES
+  {
+    id: "jar-cakes",
+    name: "Jar / Tub Cakes",
+    description: "Single-serve cake jars",
+    items: [
+      { name: "Mango Jar Cake", pricePerTub: "₹80", description: "Mango layered jar cake" },
+      { name: "Chocolate Jar Cake", pricePerTub: "₹80", description: "Chocolate jar cake" },
+      { name: "Blueberry Jar Cake", pricePerTub: "₹80", description: "Blueberry jar cake" },
+      { name: "Strawberry Jar Cake", pricePerTub: "₹80", description: "Strawberry jar cake" },
+    ],
+  },
+
+  // 🍫 CHOCOLATE BARS
+  {
+    id: "chocolate-bars",
+    name: "Chocolate Bars",
+    description: "Handcrafted chocolate bars",
+    items: [
+      { name: "Rasmalai Chocolate Bar", pricePerPiece: "₹80", description: "Rasmalai flavored chocolate" },
+      { name: "Chocolate Nuts Bar", pricePerPiece: "₹80", description: "Chocolate with nuts" },
+      { name: "Rose Thandai Bar", pricePerPiece: "₹80", description: "Thandai flavored chocolate" },
+    ],
+  },
+
+  // 🧁 CUPCAKES
+  {
+    id: "cupcakes",
+    name: "Cupcakes",
+    description: "Freshly baked cupcakes (Min order: 4)",
+    items: [
+      { name: "Chocolate Cupcakes", pricePerPiece: "₹50", description: "Chocolate cupcakes" },
+      { name: "Strawberry Cupcakes", pricePerPiece: "₹50", description: "Strawberry cupcakes" },
+      { name: "Biscoff Cupcakes", pricePerPiece: "₹70", description: "Biscoff cupcakes" },
+    ],
+  },
+
+  // 🍪 COOKIES
   {
     id: "cookies",
     name: "Cookies",
-    description: "Freshly baked crunchy cookies",
+    description: "Freshly baked cookies",
     items: [
-      { name: "Choco Chip Cookies", pricePerPiece: "₹30", description: "Classic cookies" },
+      { name: "Choco Chip Cookies", pricePerPiece: "₹30", description: "Chocolate chip cookies" },
       { name: "Butter Cookies", pricePerPiece: "₹25", description: "Buttery cookies" },
-      { name: "Oatmeal Cookies", pricePerPiece: "₹35", description: "Healthy oatmeal cookies" },
-      { name: "Double Chocolate Cookies", pricePerPiece: "₹40", description: "Rich chocolate cookies" },
+      { name: "Oatmeal Cookies", pricePerPiece: "₹35", description: "Oatmeal cookies" },
     ],
   },
 ];

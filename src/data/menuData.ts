@@ -1,10 +1,4 @@
-export interface MenuCategory {
-  id: string;
-  name: string;
-  description: string;
-  items: MenuItem[];
-  image?: string; // 👈 ADD THIS (optional so nothing breaks)
-}
+import blackForestImg from "../assets/images/regular_cakes/black-forest.jpg";
 
 
 export interface MenuItem {
@@ -15,6 +9,7 @@ export interface MenuItem {
   pricePerTub?: string;
   description: string;
   ingredients?: string;
+  image?: string; // 👈 ADD THIS
 }
 
 export interface MenuCategory {
@@ -22,7 +17,9 @@ export interface MenuCategory {
   name: string;
   description: string;
   items: MenuItem[];
+  image?: string; // 👈 ADD THIS (optional so nothing breaks)
 }
+
 
 export const menuCategories: MenuCategory[] = [
   {
@@ -36,6 +33,8 @@ export const menuCategories: MenuCategory[] = [
         price1kg: '₹650',
         description: 'Classic chocolate sponge layered with whipped cream and cherry',
         ingredients: 'Chocolate sponge, whipped cream, cherries, chocolate shavings',
+        image: blackForestImg,
+
       },
       {
         name: 'Cookie & Cream',
